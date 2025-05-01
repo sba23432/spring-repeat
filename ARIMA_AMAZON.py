@@ -11,6 +11,8 @@ def load_data():
     # Replace with your real CSV files or data sources
     amzn = pd.read_csv('AMZN.csv')
     aapl = pd.read_csv('AAPL.csv')
+    pypl = pd.read_csv('PYPL.csv')
+    nke = pd.read_csv('NKE.csv')
 
     for df in [amzn, aapl]:
         df['Date'] = pd.to_datetime(df['Date'])
