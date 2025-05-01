@@ -18,7 +18,7 @@ def load_data():
         df['Date'] = pd.to_datetime(df['Date'])
         df.set_index('Date', inplace=True)
 
-    return {'AMZN': amzn, 'AAPL': aapl}
+    return {'AMZN': amzn, 'AAPL': aapl, 'PYPL': pypl, 'NKE': nke}
 
 data = load_data()
 
